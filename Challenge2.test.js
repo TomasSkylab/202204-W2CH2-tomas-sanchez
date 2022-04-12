@@ -25,4 +25,43 @@ describe("When strictEquals function", () => {
             expect(result).toBe(expectedResult);
         });
     });
+    describe("When it receives (NaN, NaN)", () => {
+        test("Then it should return false", () => {
+            const a = NaN;
+
+            const b = NaN;
+
+            const expectedResult = false;
+
+            const result = strictEquals(a, b);
+
+            expect(result).toBe(expectedResult);
+        });
+    });
+    describe("When it receives (0, -0)", () => {
+        test("Then it should return true", () => {
+            const a = 0;
+
+            const b = -0;
+
+            const expectedResult = true;
+
+            const result = strictEquals(a, b);
+
+            expect(result).toBe(expectedResult);
+        });
+    });
+    describe("When it receives (-0, 0)", () => {
+        test("Then it should return true", () => {
+            const a = -0;
+
+            const b = 0;
+
+            const expectedResult = true;
+
+            const result = strictEquals(a, b);
+
+            expect(result).toBe(expectedResult);
+        });
+    });
 });
