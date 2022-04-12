@@ -1,0 +1,25 @@
+{
+  "name": "challenge-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TomasSkylab/2022-04-W2CH2-tomas-sanchez.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TomasSkylab/2022-04-W2CH2-tomas-sanchez/issues"
+  },
+  "homepage": "https://github.com/TomasSkylab/2022-04-W2CH2-tomas-sanchez#readme",
+  "devDependencies": {
+    "husky": "^7.0.0",
+    "jest": "^27.5.1"
+  }
+}
